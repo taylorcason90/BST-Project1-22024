@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  overflow:visible;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+  margin-bottom: 100px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+  color:rgb(14, 55, 187);
+  border-style: double;
+
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: rgb(89, 158, 199);
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: left;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+
+.banner {
+            border-style: solid;
+            float:right;
+            width: 25%;
+            padding: 10px;
+            margin: 10px;
+            background-color: rgb(223, 222, 213);
+          
+            
+        }
+        
+        .product {
+            border-style: groove;
+            float:left;
+            width: 25.33%;
+            padding: 3px;
+            margin: 10px;
+            background-color:rgb(245, 229, 93) ;
+        }
+
+        .flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: rgb(249, 250, 251);
+}
+
+.flex-container > div {
+  width: 100px;
+  margin: 25px;
+  text-align: center;
+  line-height: 25px;
+  font-size: 30px;
+  margin-right:200px;
+}
+
+.dropbtn {
+  background-color: blue;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+ 
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #5ac2e2;}
+
+h1{
+    background-color:grey;
+    text-align: center;
+    
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <a href="#default" class="logo">Women In Tech</a>
+  <div class="header-right">
+    <div class="dropdown">
+        <button class="dropbtn">Home</button>
+        <div class="dropdown-content">
+          <a href="#">Dashboard</a>
+          <a href="#">Courses</a>
+          <a href="#">Help</a>
+        </div>
+      </div>
+      
+    
+    
+    
+    <a href="register.html">Register</a>
+    <a href="login.html">Login</a>
+  </div>
+</div>
+
+<div style="padding-left:20px">
+  <h1>Technology is the way to go!</h1>
+  </div>
+  <br>
+  <div class="flex-container">
+    <div><a href="#";>Guide</div>
+        <div><a href="#";>Resources</div>
+            <div><a href="#";>Code Club</div>
+                <div><a href="#";>Job Search</div>
+                    <div><a href="#";>Instructors</div>
+    
+    
+  </div>
+  <br>
+  <br>
+  <div>
+  <p>Click any course to learn more.</p>
+  <p>See below!</p>
+</div>
+<br>
+
+<main>
+    <div id="banner-box">
+        <section class="banner">
+           <img src="https://www.gradsiren.com/career-advice/gswpcadir-content/uploads/2017/08/Software-Engineer.jpg" alt="banner imgage descr" width="250" height="170">
+                <h1>Software Engineer</h1>
+                <h4>14 Weeks</h4>
+        </section>
+        
+
+        <section class="banner">
+            <img src="https://www.bestdegreeprograms.org/wp-content/uploads/2021/07/shutterstock_1155187792-2048x1365.jpg" alt="banner image desc" width="250" height="170">
+            <h1>Data Science<h1>
+                <h4>8 weeks</h4>
+        </section>
+        
+
+        <section class="banner">
+            <img src="https://www.outstandingcolleges.com/wp-content/uploads/2017/11/Software-Developers.jpg" width="70%";>
+            <h2>Full Stack Developer<h2>
+                <h4>16 Weeks </h4>
+        </section>
+    </div>
+    <br>
+ <div id="product-gallery">
+        <section class="product">
+            <img src="https://www.intellisoft.com/wp-content/uploads/2021/03/shutterstock_1032639931-1-scaled.jpg" width="70%";>
+            <h2>Front End Developer<h2>
+                <h4>10 Weeks</h4>
+        </section>
+        <section class="product">
+            <img src="https://t-hub.mx/storage/blog/I6CAIg1Eo5ryTEoGJ7jtKnUdfdv8s7Oz85fArhUO.jpeg" width="85%">
+            <h2>Back End Developer<h2>
+                <h4>10 Weeks</h4>
+            </section>
+        <section class="product">
+            <img src="https://www.udacity.com/blog/wp-content/uploads/2021/01/Cloud-Engineer-Jobs_Blog-scaled.jpeg" width="85%">
+            <h2>Cloud Engineering<h2>
+                <h4>10 Weeks</h4>
+        </section>
+ </div>
+</main>
+
+<footer>
+
+
+</footer>
+
+</body>
+</html>
